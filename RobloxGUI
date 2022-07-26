@@ -1,0 +1,105 @@
+-- Instances:
+
+local MainGui = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local FunnyButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Walking = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local NoGravity = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local RaceCarMode = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+MainGui.Name = "MainGui"
+MainGui.Parent = game.StarterGui["wJKjwnJKi2i2o34i"]
+MainGui.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+MainGui.Position = UDim2.new(0.711515129, 0, 0.446402341, 0)
+MainGui.Size = UDim2.new(0.26060605, 0, 0.372980922, 0)
+
+UICorner.Parent = MainGui
+
+FunnyButton.Name = "FunnyButton"
+FunnyButton.Parent = MainGui
+FunnyButton.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+FunnyButton.Position = UDim2.new(0.104651161, 0, 0.759842515, 0)
+FunnyButton.Size = UDim2.new(0.790697753, 0, 0.196850389, 0)
+FunnyButton.Font = Enum.Font.SourceSansBold
+FunnyButton.Text = "He he, funny button :)"
+FunnyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+FunnyButton.TextScaled = true
+FunnyButton.TextSize = 14.000
+FunnyButton.TextWrapped = true
+
+UICorner_2.Parent = FunnyButton
+
+Walking.Name = "Walking"
+Walking.Parent = MainGui
+Walking.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Walking.BorderColor3 = Color3.fromRGB(40, 40, 40)
+Walking.Position = UDim2.new(0.104651161, 0, 0.275590539, 0)
+Walking.Size = UDim2.new(0.790697753, 0, 0.196850389, 0)
+Walking.Font = Enum.Font.SourceSansBold
+Walking.Text = "He he, walking goes BRRRR"
+Walking.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walking.TextScaled = true
+Walking.TextSize = 14.000
+Walking.TextWrapped = true
+
+UICorner_3.Parent = Walking
+
+NoGravity.Name = "NoGravity"
+NoGravity.Parent = MainGui
+NoGravity.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+NoGravity.Position = UDim2.new(0.104651161, 0, 0.0393700786, 0)
+NoGravity.Size = UDim2.new(0.790697753, 0, 0.196850389, 0)
+NoGravity.Font = Enum.Font.SourceSansBold
+NoGravity.Text = "Snap back to reality, oh there goes gravity"
+NoGravity.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoGravity.TextScaled = true
+NoGravity.TextSize = 14.000
+NoGravity.TextWrapped = true
+
+UICorner_4.Parent = NoGravity
+
+RaceCarMode.Name = "RaceCarMode"
+RaceCarMode.Parent = MainGui
+RaceCarMode.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+RaceCarMode.BorderColor3 = Color3.fromRGB(40, 40, 40)
+RaceCarMode.Position = UDim2.new(0.104651161, 0, 0.523622036, 0)
+RaceCarMode.Size = UDim2.new(0.790697753, 0, 0.196850389, 0)
+RaceCarMode.Font = Enum.Font.SourceSansBold
+RaceCarMode.Text = "Race car mode"
+RaceCarMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+RaceCarMode.TextScaled = true
+RaceCarMode.TextSize = 14.000
+RaceCarMode.TextWrapped = true
+
+UICorner_5.Parent = RaceCarMode
+
+
+NoGravity.MouseButton1Click:Connect(function()
+	game.Workspace.Gravity = 0
+end)
+
+
+Walking.MouseButton1Click:Connect(function()
+	print("Imagine walking slow")	
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40
+end)
+
+
+
+RaceCarMode.MouseButton1Click:Connect(function()
+	print("RaceCarMode Enabled")
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 700
+end)
+
+
+FunnyButton.MouseButton1Click:Connect(function()
+	while true do
+		print("I like cheese")
+	end
+end)
