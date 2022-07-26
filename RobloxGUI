@@ -100,6 +100,6 @@ end)
 
 FunnyButton.MouseButton1Click:Connect(function()
 	while true do
-		print("I like cheese")
+		print("I like cheese!")
 	end
 end)
